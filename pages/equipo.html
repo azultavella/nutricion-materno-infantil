@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/logo/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/logo/favicon-32x32.png">
@@ -12,23 +13,33 @@
 </head>
 
 <body class="colorFondo">
-    <header id="colorHeader" class="stickyHeader">
-        <div>
-            <img class="imgHeader imgRedonda" src="../assets/logo/O.png" alt="logo"> 
+    <header id="colorHeader" class="stickyHeader col-12">
+        <div> <!-- Brand/logo -->
+            <img class="imgHeader imgRedonda" src="../assets/logo/O.png" alt="logo">
         </div>
-        <nav> <!-- Barra de navegacion -->
-            <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="./equipo.html">EQUIPO</a></li>
-                <li><a href="./servicios.html">SERVICIOS</a></li>
-                <li><a href="./articulos.html">ARTÍCULOS</a></li>
-                <li><a href="./contacto.html">CONTACTO</a></li>
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./equipo.html">Equipo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./articulos.html">Articulos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
             </ul>
         </nav>
     </header>
 
     <main> <!--seccion quienes somos-->
-        <section>
+        <section class="container">
             <h1>¿QUIÉNES SOMOS?</h1>
             <p>Somos un equipo, con profesionales especializados en diversas áreas, que simplifica la ciencia de la nutrición. Ofrecemos un espacio en donde podrás encontrar todo sobre algunas de las etapas más importantes de la vida: embarazo, período de lactancia, recién nacidos, alimentación complementaria e infancia.</p>
             <p>Nos formamos en el mundo de la nutrición Materno-Infantil a nivel nacional e internacional. Contamos con un máster en Nutrición durante el Embarazo y diversas especializaciones en Lactancia Matera, Baby Led Weaning y nutrición en la infancia.</p>
@@ -36,8 +47,8 @@
             <p>Hemos estado a cargo del área de nutrición materno infantil en distintas instituciones, entre ellas el Hospital Elina de la Serna, el Hospital San Roque y actualmente en el Hospital Italiano.</p>
         </section>
         
-        <section> <!--miembros del equipo-->
-            <div>
+        <section class="container-fluid"> <!--miembros del equipo-->
+            <div class="text-center">
                 <h2>CONOCENOS</h2>
             </div>
             <div>
@@ -68,7 +79,6 @@
                     <p>Certificación ISAK Nivel 1</p>
                     <p>Taller de Actualización de "Alimentación complementaria" </p>
                     <p>Encargada de asistir a las profesionales durante las consultas</p>
-
                 </article>
             </div>
         </section>
@@ -78,11 +88,11 @@
     </main>
         
     <footer id="footer"> <!-- Copyright y redes sociales -->
-        <section>
+        <aside>
             <p>Copyright</p>
-        </section>
+        </aside>
 
-        <nav>
+        <aside>
             <div> <!-- icono mail -->
                 <a href="https://www.google.com/intl/es-419/gmail/about/"> 
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
@@ -104,7 +114,7 @@
                     </svg>
                 </a>
             </div>
-        </nav>
+        </aside>
     </footer>
     <div>
         <svg class="subir" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
@@ -112,5 +122,8 @@
         </svg>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 </body>
 </html>

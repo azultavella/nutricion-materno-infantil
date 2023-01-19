@@ -12,10 +12,6 @@
 
 /* CSS GENERALES */
 
-/* html {
-    scroll-behavior: smooth;
-} */
-
 html {
     font-size: 1em;
 }
@@ -58,7 +54,7 @@ li {
     border-radius: 50%;
     padding: 5px;
     position: fixed;
-    bottom: 50px;
+    bottom: 75px;
     right: 40px;
     text-align: center;
     line-height: 40px;
@@ -78,6 +74,13 @@ li {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+.divInicio {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .inicioMain {
@@ -131,6 +134,7 @@ nav ul li a {
     border-radius: 50%;
 } */
 #footer {
+    height: 4em;
     width: 100%;
     background-color: #405944b2;
     display: flex;
