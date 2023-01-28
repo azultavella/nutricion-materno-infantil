@@ -1,170 +1,194 @@
+@charset "UTF-8";
 /* GOOGLE FONTS */
-
-@import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@300&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 /* RESETEO CSS */
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* CSS GENERALES */
-
 html {
-    font-size: 1em;
+  font-size: 1em;
 }
 
 .imgRedonda {
-    border-radius: 50%;
+  border-radius: 50%;
 }
-
-.montserrat {
-    font-family: 'Montserrat', sans-serif;
-}
-
-.lora {
-    font-family: 'Lora', serif;
-}
-
-.textoSombra {
-    text-shadow: 0 0 5px #000;
-}
-
-/* .bordeSombra{
-
-} */
 
 li {
-    display: inline-block;
+  display: inline-block;
 }
-
-/* CSS PAGINAS GENERAL */
 
 .colorFondo {
-    background-color: #FBEDED;
+  background-color: #FBEDED;
 }
 
+/* BOTON SUBIR PAGINAS */
 .subir {
-    height: 30px;
-    width: auto;
-    color: #FBEDED;
-    background-color: #405944;
-    border-radius: 50%;
-    padding: 5px;
-    position: fixed;
-    bottom: 75px;
-    right: 40px;
-    text-align: center;
-    line-height: 40px;
+  height: 30px;
+  width: auto;
+  color: #FBEDED;
+  background-color: #405944;
+  border-radius: 50%;
+  padding: 5px;
+  position: fixed;
+  bottom: 75px;
+  right: 40px;
+  text-align: center;
+  line-height: 40px;
 }
 
 .subir:hover {
-    transform: scale(1.3);
-    transition: 0.5s;
+  transform: scale(1.3);
+  transition: 0.5s;
 }
 
 /* CSS PARA INICIO */
-
 #inicioFondo {
-    background-color: #FBEDED;
-    background-image: url(../assets/inicio/inicio-embarazada-hija-blur.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  background-color: #FBEDED;
+  background-image: url(../assets/bebe-frambuesas.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .divInicio {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .inicioMain {
-    background-color: #405944b2;
-    width: fit-content;
-    padding-block: 20px;
-    padding-inline: 60px;
-    border-radius: 15px;
+  /* background-color: #405944b2; */
+  width: fit-content;
+  margin-top: 70px;
+  padding-block: 20px;
+  padding-inline: 60px;
+  border-radius: 15px;
 }
 
-.inicioLi{
-    background-color: #405944b2;
-    padding-block: 10px;
-    padding-inline: 20px;
-    border-radius: 5px;
+.inicioLi {
+  background-color: rgba(64, 89, 68, 0.8078431373);
+  width: 7em;
+  text-align: center;
+  margin: 5px;
+  padding-inline: 20px;
+  border-radius: 5px;
 }
 
 .imgInicio {
-    height: 10em;
-    width: auto;
+  height: 10em;
+  width: auto;
+  margin-bottom: 1em;
 }
 
 nav ul li a {
-    list-style-type: none;
-    text-decoration: none;
-    color: #405944;
-    /* font-family: 'Courier New', Courier, monospace;  */
+  list-style-type: none;
+  text-decoration: none;
+  color: #405944;
+  /* font-family: 'Courier New', Courier, monospace;  */
 }
 
 /* CSS BARRA DE NAVEGACION PAGINAS */
-
 #colorHeader {
-    background-color: #55735F;
-}
-
-.imgHeader {
-    height: 5em;
-    width: auto;
+  background-color: #55735F;
 }
 
 .stickyHeader {
-    position: sticky;
-    top: 0;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.imgHeader {
+  height: 5em;
+  width: auto;
+  margin: 0.4em;
+}
+
+.paginasLi {
+  margin-inline: 0.5em;
 }
 
 /* CSS FOOTER */
-
-/* #footer nav a {
-    text-align: center;
-    background-color: #403A3A;
-    border-radius: 50%;
-} */
 #footer {
-    height: 4em;
-    width: 100%;
-    background-color: #405944b2;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+  height: 4em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }
-
 #footer div {
-    display: inline-block;
+  display: inline-block;
+}
+#footer svg {
+  color: #405944;
+  margin-inline: 0.3em;
 }
 
-#footer svg {
-    color: #405944;
+.footer {
+  height: 4em;
+  width: 100%;
+  margin-top: 3em;
+  background-color: rgba(64, 89, 68, 0.6980392157);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.footer div {
+  display: inline-block;
+}
+.footer svg {
+  color: #405944;
+  margin-inline: 0.3em;
 }
 
 /* CSS EQUIPO */
-
 .imgTamaño {
-    height: 20em;
-    width: auto;
+  height: 20em;
+  width: auto;
+}
+
+/* con flexbox */
+.perfiles {
+  display: flex;
+}
+
+.perfil {
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
+  background-color: #C5B9AF;
+  border-radius: 2%;
 }
 
 /* CSS SERVICIOS */
-
 .bordesRedondeados {
-    border-radius: 12%;
+  border-radius: 12%;
+}
+
+.agendaTurno {
+  text-decoration: none;
+  padding: 1em;
+  margin: 2em;
+  background-color: #405944;
+  color: #FBEDED;
+  border-radius: 5%;
+}
+
+.agendaTurno:hover {
+  background-color: #55735F;
+  color: #FBEDED;
+  text-decoration: none;
 }
 
 /* CSS ARTICULOS */
-
-
-
 /* CSS CONTACTO */
+
+/*# sourceMappingURL=style.css.map */
