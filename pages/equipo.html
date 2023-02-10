@@ -15,33 +15,38 @@
 </head>
 
 <body class="colorFondo">
-    <header id="colorHeader" class="stickyHeader col-12">
+    <header id="pagHeader" class="fixed-top col-12">
         <div> <!-- Brand/logo -->
-            <img class="imgHeader imgRedonda" src="../assets/logo/O.png" alt="logo">
+            <img src="../assets/logo/O.png" alt="logo">
         </div>
-        <nav class="navbar navbar-expand-sm navbar-dark">
-            <ul class="navbar-nav">
-                <li class="nav-item paginasLi">
-                    <a class="nav-link" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item paginasLi">
-                    <a class="nav-link" href="./equipo.html">Equipo</a>
-                </li>
-                <li class="nav-item paginasLi">
-                    <a class="nav-link paginasLi" href="./servicios.html">Servicios</a>
-                </li>
-                <li class="nav-item paginasLi">
-                    <a class="nav-link" href="./articulos.html">Articulos</a>
-                </li>
-                <li class="nav-item paginasLi">
-                    <a class="nav-link" href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./equipo.html">Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link paginasLi" href="./servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./articulos.html">Articulos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <main> <!--seccion quienes somos-->
-        <section class="container">
+        <section class="quienesSomos container">
             <h1>¿QUIÉNES SOMOS?</h1>
             <p>Somos un equipo, con profesionales especializados en diversas áreas, que simplifica la ciencia de la nutrición. Ofrecemos un espacio en donde podrás encontrar todo sobre algunas de las etapas más importantes de la vida: embarazo, período de lactancia, recién nacidos, alimentación complementaria e infancia.</p>
             <p>Nos formamos en el mundo de la nutrición Materno-Infantil a nivel nacional e internacional. Contamos con un máster en Nutrición durante el Embarazo y diversas especializaciones en Lactancia Matera, Baby Led Weaning y nutrición en la infancia.</p>
@@ -49,43 +54,58 @@
             <p>Hemos estado a cargo del área de nutrición materno infantil en distintas instituciones, entre ellas el Hospital Elina de la Serna, el Hospital San Roque y actualmente en el Hospital Italiano.</p>
         </section>
         
-        <section class="container-fluid"> <!--miembros del equipo-->
+        <section class="conocenos container-fluid"> <!--miembros del equipo-->
             <div class="text-center">
                 <h2>CONOCENOS</h2>
             </div>
             <div class="perfiles">
-                <article class="perfil">
-                    <img class="imgTamaño imgRedonda" src="../assets/equipo/equipo-perfil.jpg" alt="foto pefil">
-                    <h3>María Azul Tavella</h3>
-                    <p>Nutricionista Materno Infantil</p>
-                    <p>Lic. en Nutrición (UNLP) M.P.0000</p>
-                    <p>Diplomado en Nutrición Materno Infantil</p>
-                    <p>Diplomado en Nutrición Clínica Pediátrica</p>
-                    <p>Certificación Internacional en Nutrición Clínica Pediátrica</p>
-                    <p>Certificación ISAK Nivel 1</p>
+                <article>
+                    <div>
+                        <img src="../assets/equipo/equipo-perfil.jpg" alt="foto pefil">
+                    </div>
+                    <div>
+                        <h3>María Azul Tavella</h3>
+                    </div>
+                    <div>
+                        <p>Nutricionista Materno Infantil</p>
+                        <p>Lic. en Nutrición (UNLP) M.P.0000</p>
+                        <p>Diplomado en Nutrición Materno Infantil</p>
+                        <p>Diplomado en Nutrición Clínica Pediátrica</p>
+                        <p>Certificación Internacional en Nutrición Clínica Pediátrica</p>
+                        <p>Certificación ISAK Nivel 1</p>
+                    </div>
                 </article>
-                <article class="perfil">
-                    <img class="imgTamaño imgRedonda" src="../assets/equipo/equipo-perfil-avatar.png" alt="foto perfil">
-                    <h3>María Ortale</h3>
-                    <p>Nutricionista Materno Infantil</p>
-                    <p>Lic. en Nutrición (UNLP) M.P.1111</p>
-                    <p>Diplomado en Nutricion Clínica Pediátrica</p>
-                    <p>Consultor internacional certificado en lactancia materna</p>
-                    <p>Diplomado en nutrición infantil</p>
-                    <p>Certificación ISAK Nivel 1</p>
+                <article>
+                    <div>
+                        <img src="../assets/equipo/equipo-perfil-avatar.png" alt="foto perfil">
+                    </div>
+                    <div>
+                        <h3>María Ortale</h3>
+                    </div>
+                    <div>
+                        <p>Nutricionista Materno Infantil</p>
+                        <p>Lic. en Nutrición (UNLP) M.P.1111</p>
+                        <p>Diplomado en Nutricion Clínica Pediátrica</p>
+                        <p>Consultor internacional certificado en lactancia materna</p>
+                        <p>Diplomado en nutrición infantil</p>
+                        <p>Certificación ISAK Nivel 1</p>
+                    </div>
                 </article>
-                <article class="perfil">
-                    <img class="imgTamaño imgRedonda" src="../assets/equipo/equipo-perfil-avatar.png" alt="foto perfil">
-                    <h3>Juliana Garganta</h3>
-                    <p>Estudiante de Licenciatura en Nutrición UCALP</p>
-                    <p>Certificación ISAK Nivel 1</p>
-                    <p>Taller de Actualización de "Alimentación complementaria" </p>
-                    <p>Encargada de asistir a las profesionales durante las consultas</p>
+                <article>
+                    <div>
+                        <img src="../assets/equipo/equipo-perfil-avatar.png" alt="foto perfil">
+                    </div>
+                    <div>
+                        <h3>Juliana Garganta</h3>
+                    </div>
+                    <div>
+                        <p>Estudiante de Licenciatura en Nutrición UCALP</p>
+                        <p>Certificación ISAK Nivel 1</p>
+                        <p>Taller de Actualización de "Alimentación complementaria" </p>
+                        <p>Encargada de asistir a las profesionales durante las consultas</p>
+                    </div>
                 </article>
             </div>
-        </section>
-        <section>
-            
         </section>
     </main>
         

@@ -15,62 +15,103 @@
 </head>
 
 <body class="colorFondo">
-    <header id="colorHeader" class="stickyHeader">
+    <header id="pagHeader" class="fixed-top col-12">
         <div> <!-- Brand/logo -->
-            <img class="imgHeader imgRedonda" src="../assets/logo/O.png" alt="logo">
+            <img src="../assets/logo/O.png" alt="logo">
         </div>
-        <nav class="navbar navbar-expand-sm navbar-dark">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./equipo.html">Equipo</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./servicios.html">Servicios</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./articulos.html">Articulos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./equipo.html">Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link paginasLi" href="./servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./articulos.html">Articulos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <main>
-        <h1>ARTÍCULOS DE INTERÉS</h1>
-        <p>
-            Te dejamos a mano archivos y páginas de interés relacionados con la nutrición infantil para que puedas stockearte de elementos para tu bebé e informarte acerca de lo que necesites.
-        </p>
-    </main>
-    <section>
-        <h2>Links útiles</h2>
-        <a href="https://latienditadelanutri.empretienda.com.ar/">
-            <img src="../assets/articulos/la-tiendita-de-la-nutri.png" alt="La tiendita de la nutri">
-            <p>Baberos, platitos, vasitos y más!</p>
-        </a>
-        <a href="https://nutricionmaternoinfantil.empretienda.com.ar/">
-            <img src="../assets/articulos/recetarios.jpeg" alt="Recetarios">
-            <p>Recetarios, guía primeras comidas, guía cortes BLW y más!</p> 
-        </a>
-        <a href="https://drive.google.com/file/d/1Og5n7Klh1nPTXLDeCWZueyoV-DzvnxUs/view">Descargables gratuitos</a>
-        <a href="https://drive.google.com/file/d/119QUaoN7nnvOuQzrhqvGb5-AUZiRZBPx/view">Cronograma de introcuccón de alimentos (AC)</a>
-        <a href="https://drive.google.com/file/d/1Mz85J-6JwzkRG1k2DekslKPVstdtTd2o/view">Check list de alimentación complementaria</a>
-    </section>
-    <section>
-        <h2>Papers</h2>
-        <a href="https://drive.google.com/file/d/1Koqn7XLzA-aqbalMULb8fYQMmFZXQzip/view">Guía de alimentación UNICEF</a>
-    </section>
-        
-    <footer class="footer"> <!-- Copyright y redes sociales -->
-        <section>
-            <p>Copyright</p>
+        <section class="articulos container">
+            <h1>ARTÍCULOS DE INTERÉS</h1>
+            <p>Te dejamos a mano archivos y páginas de interés relacionados con la nutrición infantil para que puedas stockearte de elementos para tu bebé e informarte acerca de lo que necesites.</p>
+        </section>
+    
+        <section class="artSecciones">
+            <h2 class="text-center col-12">Links útiles</h2>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="card col-lg-3 offset-sm-2 col-sm-8 ">
+                        <img class="card-img-top" src="../assets/articulos/la-tiendita-de-la-nutri.png" alt="La tiendita de la nutri">
+                        <div class="card-body">
+                            <h4 class="card-title">Baberos, platitos, vasitos y más!</h4>
+                            <a href="https://latienditadelanutri.empretienda.com.ar/" class="btn stretched-link"></a>
+                        </div>
+                    </div>
+
+                    <div class="card col-lg-3 offset-sm-2 col-sm-8">
+                        <img class="card-img-top" src="../assets/articulos/recetarios.jpeg" alt="La tiendita de la nutri">
+                        <div class="card-body">
+                            <h4 class="card-title">Recetarios, guía primeras comidas, guía cortes BLW y más!</h4>
+                            <a href="https://nutricionmaternoinfantil.empretienda.com.ar/" class="btn stretched-link"></a>
+                        </div>
+                    </div>
+
+                    <div class="card col-lg-3 offset-sm-2 col-sm-8">
+                        <img class="card-img-top" src="../assets/articulos/CronogramaAC.jpg" alt="Cronograma Alimentacion Complementaria">
+                        <div class="card-body">
+                            <h4 class="card-title">Cronograma de introcuccón de alimentos (AC)</h4>
+                            <a href="https://drive.google.com/file/d/119QUaoN7nnvOuQzrhqvGb5-AUZiRZBPx/view" class="btn stretched-link"></a>
+                        </div>
+                    </div>
+
+                    <div class="card col-lg-3 offset-sm-2 col-sm-8">
+                        <img class="card-img-top" src="../assets/articulos/checklistAC.jpg" alt="Checklist Alimentacion Complementaria">
+                        <div class="card-body">
+                            <h4 class="card-title">Check list de alimentación complementaria</h4>
+                            <a href="https://drive.google.com/file/d/1Mz85J-6JwzkRG1k2DekslKPVstdtTd2o/view" class="btn stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <nav>
+        <section class="artSecciones">
+            <h2 class="text-center col-12">Papers</h2>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="card col-lg-3 offset-sm-2 col-sm-8">
+                        <img class="card-img-top" src="../assets/articulos/UNICEF.jpg " alt="Checklist Alimentacion Complementaria">
+                        <div class="card-body">
+                            <h4 class="card-title">Guía de alimentación UNICEF</h4>
+                            <a href="https://drive.google.com/file/d/1Koqn7XLzA-aqbalMULb8fYQMmFZXQzip/view" class="btn stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer"> <!-- Copyright y redes sociales -->
+        <aside>
+            <p>Copyright</p>
+        </aside>
+
+        <aside>
             <div> <!-- icono mail -->
                 <a href="https://www.google.com/intl/es-419/gmail/about/"> 
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
@@ -92,7 +133,7 @@
                     </svg>
                 </a>
             </div>
-        </nav>
+        </aside>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

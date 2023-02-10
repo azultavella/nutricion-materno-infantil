@@ -15,66 +15,113 @@
 </head>
 
 <body class="colorFondo">
-    <header id="colorHeader" class="stickyHeader">
+    <header id="pagHeader" class="fixed-top col-12">
         <div> <!-- Brand/logo -->
-            <img class="imgHeader imgRedonda" src="../assets/logo/O.png" alt="logo">
+            <img src="../assets/logo/O.png" alt="logo">
         </div>
-        <nav class="navbar navbar-expand-sm navbar-dark">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./equipo.html">Equipo</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./servicios.html">Servicios</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./articulos.html">Articulos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./equipo.html">Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link paginasLi" href="./servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./articulos.html">Articulos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <main> <!-- Sección de descripción del tipo de trabajo -->
-        <section>
+        <section class="servicios container">
             <h1>SERVICIOS</h1>
             <p>Nuestro objetivo es acompañarte en estas etapas tan importantes de la vida, brindando toda la información y herramientas necesarias a través de un asesoramiento personalizado y adecuado a cada situación en particular.</p>
             <p>Te asesoramos para la preparación de tu embarazo y posteriormente sobre la adopción de hábitos saludables para vos, tu bébe y tu familia, con el fin de lograr llevar y disfrutar una vida sana.</p>
         </section>
-        <section>
-            <img class="imgTamaño bordesRedondeados" src="../assets/servicios/servicios-mujer-cocinando.jpg" alt="mujer cocinando"> 
-            <h2>NUTRICIÓN ANTES DEL EMBARAZO</h2>
-        </section>
-        <section>
-            <img class="imgTamaño bordesRedondeados" src="../assets/servicios/servicios-embarazo.jpg" alt="embarazada">
-            <h2>NUTRICIÓN DURANTE EL EMBARAZO</h2>
-        </section>
-        <section>
-            <img class="imgTamaño bordesRedondeados" src="../assets/servicios/servicios-lactancia.jpg" alt="lactancia">
-            <h2>NUTRICIÓN DURANTE LA LACTANCIA MATERNA</h2>
-        </section>
-        <section>
-            <img class="imgTamaño bordesRedondeados" src="../assets/servicios/servicios-blw.jpg" alt="alimentacion complementaria">
-            <h2>ALIMENTACION COMPLEMENTARIA</h2>
-        </section>
-        <section>
-            <img class="imgTamaño bordesRedondeados" src="../assets/servicios/servicios-niños-comiendo.jpg" alt="niños comiendo">
-            <h2>NUTRICIÓN EN INFANCIA (hasta los 6 años)</h3>
-        </section>
-        <a class="agendaTurno" href="contacto.html#turno">¡Agenda un turno!</a> 
-    </main>
-            
-    <footer class="footer"> <!-- Copyright y redes sociales -->
-        <section>
-            <p>Copyright</p>
-        </section>
 
-        <nav>
+        <!-- CAROUSEL -->
+
+        <div class="container serviciosCarosuel">
+            <div class="row">
+                <div class="offset-1 col-sm-10">
+                    <div id="demo" class="carousel slide" data-ride="carousel">
+                        <!-- INDICADORES -->
+                        <ul class="carousel-indicators">
+                            <li data-target="#demo" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo" data-slide-to="1"></li>
+                            <li data-target="#demo" data-slide-to="2"></li>
+                            <li data-target="#demo" data-slide-to="3"></li>
+                            <li data-target="#demo" data-slide-to="4"></li>
+                        </ul>
+                        <!-- SLIDESHOW -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../assets/servicios/servicios-mujer-cocinando.jpg" alt="Mujer Cocinando" width="1000" height="auto">
+                                <div class="carousel-caption">
+                                    <h3>NUTRICIÓN ANTES DEL EMBARAZO</h3>
+                                </div>   
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../assets/servicios/servicios-embarazo.jpg" alt="Embarazada" width="1000" height="auto">
+                                <div class="carousel-caption">
+                                    <h3>NUTRICIÓN DURANTE EL EMBARAZO</h3>
+                                </div>   
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../assets/servicios/servicios-lactancia.jpg" alt="Lactancia" width="1000" height="auto">
+                                <div class="carousel-caption">
+                                    <h3>NUTRICIÓN DURANTE LA LACTANCIA MATERNA</h3>
+                                </div>   
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../assets/servicios/servicios-blw.jpg" alt="Alimentacion Complementaria" width="1000" height="auto">
+                                <div class="carousel-caption">
+                                    <h3>ALIMENTACION COMPLEMENTARIA</h3>
+                                </div>   
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../assets/servicios/servicios-niños-comiendo.jpg" alt="Niños comiendo" width="1000" height="auto">
+                                <div class="carousel-caption">
+                                    <h3>NUTRICIÓN EN INFANCIA (hasta los 6 años)</h3>
+                                </div>   
+                            </div>
+                        </div>
+                        <!-- CONTROLES -->
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FIN CAROUSEL -->
+        <div class="container text-center">
+            <a class="agendaTurno" href="contacto.html#turno">¡Agenda un turno!</a> 
+        </div>
+    </main>
+
+    <footer class="footer"> <!-- Copyright y redes sociales -->
+        <aside>
+            <p>Copyright</p>
+        </aside>
+
+        <aside>
             <div> <!-- icono mail -->
                 <a href="https://www.google.com/intl/es-419/gmail/about/"> 
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
@@ -96,7 +143,7 @@
                     </svg>
                 </a>
             </div>
-        </nav>
+        </aside>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

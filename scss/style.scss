@@ -11,10 +11,12 @@ $color3: #C5B9AF;
 $color4: #FBEDED;
 $color5: #FFFFFF;
 
+$sombraCaja: 0 0 10px #C5B9AF;
+
 $fuenteM: 'Montserrat', sans-serif;
 $fuenteL: 'Lora', serif;
 
-$sombraTexto: 0 0 5px #000;
+$fuenteTexto: 1.2em;
 
 $redondo: 50%;
 $redondeado1: 15%;
@@ -29,14 +31,23 @@ $redondeado2: 2%;
     box-sizing: border-box;
 }
 
+
 /* CSS GENERALES */
 
 html {
     font-size: 1em;
 }
 
-.imgRedonda {
-    border-radius: 50%;
+h1 {
+    font-family: $fuenteL;
+}
+
+h2 {
+    font-family: $fuenteM;
+}
+
+p {
+    font-family: $fuenteL;
 }
 
 li {
@@ -47,32 +58,38 @@ li {
     background-color: $color4;
 }
 
+main {
+    margin-top: 6em;
+}
+
+
 /* BOTON SUBIR PAGINAS */
 
-.subir {
-    height: 30px;
-    width: auto;
-    color: $color4;
-    background-color: $color1;
-    border-radius: 50%;
-    padding: 5px;
-    position: fixed;
-    bottom: 75px;
-    right: 40px;
-    text-align: center;
-    line-height: 40px;
-}
+// .subir {
+//     height: 30px;
+//     width: auto;
+//     color: $color4;
+//     background-color: $color1;
+//     border-radius: 50%;
+//     padding: 5px;
+//     position: fixed;
+//     bottom: 75px;
+//     right: 40px;
+//     text-align: center;
+//     line-height: 40px;
+// }
 
-.subir:hover {
-    transform: scale(1.3);
-    transition: 0.5s;
-}
+// .subir:hover {
+//     transform: scale(1.3);
+//     transition: 0.5s;
+// }
+
 
 /* CSS PARA INICIO */
 
 #inicioFondo {
     background-color: $color4;
-    background-image: url(../assets/bebe-frambuesas.jpg);
+    background-image: url(../assets/inicio/bebe-frambuesas.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -87,12 +104,28 @@ li {
 }
 
 .inicioMain {
-    /* background-color: #405944b2; */
     width: fit-content;
     margin-top: 70px;
     padding-block: 20px;
     padding-inline: 60px;
     border-radius: 15px;
+
+    & img{
+        height: 10em;
+        width: auto;
+        margin-bottom: 1em;
+        border-radius: $redondo;
+        filter: drop-shadow(3px 3px 20px $color1);
+    }
+
+    & h1{
+        font-size: 3em;
+    }
+
+    & h2{
+        font-size: 2em;
+        font-weight: bold;
+    }
 }
 
 .inicioLi{
@@ -100,44 +133,35 @@ li {
     width: 7em;
     text-align: center;
     margin: 5px;
-    padding-inline: 20px;
     border-radius: 5px;
-}
-
-.imgInicio {
-    height: 10em;
-    width: auto;
-    margin-bottom: 1em;
 }
 
 nav ul li a {
     list-style-type: none;
     text-decoration: none;
     color: $color1;
-    /* font-family: 'Courier New', Courier, monospace;  */
+    font-family: $fuenteM;
+    text-transform: uppercase;
 }
+
 
 /* CSS BARRA DE NAVEGACION PAGINAS */
 
-#colorHeader {
+#pagHeader {
     background-color: $color2;
-}
-
-.stickyHeader {
-    position: sticky;
-    top: 0;
     display: flex;
     justify-content: space-between;
-}
 
-.imgHeader {
-    height: 5em;
-    width: auto;
-    margin: 0.4em;
-}
+    & img {
+        height: 5em;
+        width: auto;
+        margin: 0.4em;
+        border-radius: $redondo;
+    }
 
-.paginasLi {
-    margin-inline: 0.5em;
+    & nav ul li {
+        margin-inline: 0.5em;
+    }
 }
 
 
@@ -149,6 +173,10 @@ nav ul li a {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+
+    & aside p{
+        color: #405944;
+    }
 
     & div {
         display: inline-block;
@@ -169,6 +197,10 @@ nav ul li a {
     justify-content: space-between;
     padding: 20px;
 
+    & aside p{
+        color: #405944;
+    }
+
     & div {
         display: inline-block;
     }
@@ -182,28 +214,79 @@ nav ul li a {
 
 /* CSS EQUIPO */
 
-.imgTamaño {
-    height: 20em;
-    width: auto;
+.quienesSomos {
+    padding-block: 15px;
+    margin-block: 15px;
+
+    & h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    & p {
+        font-size: $fuenteTexto;
+    }
 }
 
-    /* con flexbox */
+.conocenos {
+    padding-block: 15px;
+    margin-block: 15px;
+
+    & h2 {
+        margin-bottom: 20px;
+    }
+}
 
 .perfiles {
     display: flex;
+    flex-direction: column;
+
+    & article {
+        margin: 1em;
+        padding: 1em;
+        text-align: center;
+        background-color: $color4;
+        box-shadow: $sombraCaja;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        & img {
+            height: 20em;
+            width: auto;
+            border-radius: $redondo;
+        }
+    }
 }
 
-.perfil{
-    margin: 1em;
-    padding: 1em;
-    text-align: center;
-    background-color: $color3;
-    border-radius: 2%;
-}
+
 /* CSS SERVICIOS */
 
-.bordesRedondeados {
-    border-radius: 12%;
+.servicios {
+    padding-block: 15px;
+    margin-block: 15px;
+
+    & h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    & p {
+        font-size: $fuenteTexto;
+    }
+}
+
+.serviciosCarosuel {
+    margin-block: 5em;
+    box-shadow: $sombraCaja;
+
+    & h3 {
+        font-family: $fuenteM;
+        background-color: #405944a1;
+        border-radius: 5px;
+        font-size: 1.5em;
+    }
 }
 
 .agendaTurno{
@@ -212,7 +295,8 @@ nav ul li a {
     margin: 2em;
     background-color:$color1;
     color: $color4;
-    border-radius: 5%;
+    border-radius: 5px;
+    box-shadow: $sombraCaja;
 }
 
 .agendaTurno:hover {
@@ -221,8 +305,80 @@ nav ul li a {
     text-decoration: none;
 }
 
+
 /* CSS ARTICULOS */
 
+.articulos {
+    padding-block: 15px;
+    margin-block: 15px;
+
+    & h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    & p {
+        font-size: $fuenteTexto;
+    }
+}
+
+.artSecciones{
+    margin-block: 2em;
+    padding: 1em;
+    
+    & h2{
+        padding-bottom: 0.5em;
+    }
+
+    & p {
+        padding-bottom: 0.5em;
+    }
+
+    & .card {
+        width: 300px;
+        height: auto;
+        margin: 1em;
+    }
+}
 
 
 /* CSS CONTACTO */
+
+.contactanos {
+    padding-block: 15px;
+    margin-block: 15px;
+}
+
+.contSecciones{
+    margin-block: 1.5em;
+    
+    & h2{
+        padding-bottom: 0.5em;
+    }
+
+    & p {
+        padding-bottom: 0.5em;
+    }
+
+    & .rrssContacto {
+        margin-block: 2em;
+        margin-left: 6em;
+        font-family: $fuenteL;
+    }
+}
+
+.btnContacto{
+    border: none;
+    padding-block: 0.5em;
+    padding-inline: 2em;
+    background-color:$color1;
+    color: $color4;
+    border-radius: 5px;
+    box-shadow: $sombraCaja;
+}
+
+.btnContacto:hover {
+    background-color: $color2;
+    color: $color4;
+    text-decoration: none;
+}
