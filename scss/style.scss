@@ -258,6 +258,10 @@ nav ul li a {
             border-radius: $redondo;
         }
     }
+
+    & div {
+        padding-block: 1em;
+    }
 }
 
 
@@ -279,13 +283,16 @@ nav ul li a {
 
 .serviciosCarosuel {
     margin-block: 5em;
-    box-shadow: $sombraCaja;
 
     & h3 {
         font-family: $fuenteM;
         background-color: #405944a1;
         border-radius: 5px;
         font-size: 1.5em;
+    }
+
+    & img {
+        width: 100%;
     }
 }
 
@@ -365,6 +372,12 @@ nav ul li a {
         margin-left: 6em;
         font-family: $fuenteL;
     }
+
+}
+
+.colorInput {
+    background-color: $color3;
+    box-shadow: $sombraCaja;
 }
 
 .btnContacto{

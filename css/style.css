@@ -189,6 +189,9 @@ nav ul li a {
   width: auto;
   border-radius: 50%;
 }
+.perfiles div {
+  padding-block: 1em;
+}
 
 /* CSS SERVICIOS */
 .servicios {
@@ -205,13 +208,15 @@ nav ul li a {
 
 .serviciosCarosuel {
   margin-block: 5em;
-  box-shadow: 0 0 10px #C5B9AF;
 }
 .serviciosCarosuel h3 {
   font-family: "Montserrat", sans-serif;
   background-color: rgba(64, 89, 68, 0.631372549);
   border-radius: 5px;
   font-size: 1.5em;
+}
+.serviciosCarosuel img {
+  width: 100%;
 }
 
 .agendaTurno {
@@ -278,6 +283,11 @@ nav ul li a {
   margin-block: 2em;
   margin-left: 6em;
   font-family: "Lora", serif;
+}
+
+.colorInput {
+  background-color: #C5B9AF;
+  box-shadow: 0 0 10px #C5B9AF;
 }
 
 .btnContacto {
